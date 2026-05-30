@@ -1,0 +1,146 @@
+/* ── Login.css ──────────────────────────────── */
+
+/* 페이지 전체 배경 */
+.login-page {
+  min-height: calc(100vh - 60px); /* navbar 높이 제외 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%);
+  padding: 2rem;
+}
+
+/* 로그인 카드 */
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* 카드 헤더 */
+.login-card__header {
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.login-card__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.4rem;
+}
+
+.login-card__subtitle {
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+/* 에러 메시지 박스 */
+.login-card__error {
+  background-color: #fef2f2;
+  border: 1px solid #fca5a5;
+  border-left: 4px solid #ef4444;
+  color: #991b1b;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 1.2rem;
+}
+
+/* 폼 그룹 */
+.login-form__group {
+  margin-bottom: 1.2rem;
+}
+
+.login-form__label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.4rem;
+}
+
+/* 인풋 필드 */
+.login-form__input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #1e293b;
+  background-color: #f9fafb;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.login-form__input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  background-color: #ffffff;
+}
+
+.login-form__input:disabled {
+  background-color: #e5e7eb;
+  cursor: not-allowed;
+}
+
+/* 로그인 버튼 */
+.login-form__btn {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.login-form__btn:hover:not(:disabled) {
+  background-color: #1d4ed8;
+}
+
+.login-form__btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.login-form__btn--loading {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+/* 테스트 계정 힌트 */
+.login-card__hint {
+  margin-top: 1.8rem;
+  padding: 1rem;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.login-card__hint p {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-bottom: 0.4rem;
+}
+
+.login-card__hint code {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #1e40af;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin: 0.2rem;
+  font-family: "Consolas", monospace;
+}

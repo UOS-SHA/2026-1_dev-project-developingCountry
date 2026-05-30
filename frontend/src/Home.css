@@ -1,0 +1,118 @@
+/* ── Home.css ───────────────────────────────── */
+
+/* 페이지 전체 배경 */
+.home-page {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ecfdf5 0%, #eff6ff 100%);
+  padding: 2rem;
+}
+
+/* 홈 카드 */
+.home-card {
+  width: 100%;
+  max-width: 520px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* 아이콘 */
+.home-card__icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+/* 제목 */
+.home-card__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.4rem;
+}
+
+.home-card__name {
+  color: #2563eb;
+}
+
+/* 서브타이틀 */
+.home-card__subtitle {
+  font-size: 1rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+/* 유저 정보 섹션 */
+.home-info {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.home-info__title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #475569;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* 유저 정보 테이블 */
+.home-info__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.home-info__table th,
+.home-info__table td {
+  padding: 0.55rem 0.5rem;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.home-info__table th {
+  width: 30%;
+  color: #64748b;
+  font-weight: 600;
+  text-align: left;
+}
+
+.home-info__table td {
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.home-info__table tr:last-child th,
+.home-info__table tr:last-child td {
+  border-bottom: none;
+}
+
+/* 로그인 상태 뱃지 */
+.home-info__badge {
+  display: inline-block;
+  background-color: #dcfce7;
+  color: #166534;
+  padding: 0.2rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* 하단 안내 메시지 */
+.home-card__note {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.home-card__note strong {
+  color: #ef4444;
+}

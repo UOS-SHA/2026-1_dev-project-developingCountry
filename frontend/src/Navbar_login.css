@@ -1,0 +1,64 @@
+/* ── Navbar.css ─────────────────────────────── */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 60px;
+  background-color: #1e3a5f;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* 브랜드 로고 */
+.navbar__brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+/* 오른쪽 영역 */
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* 유저 이름 */
+.navbar__username {
+  font-size: 0.95rem;
+  color: #bfdbfe;
+  font-weight: 500;
+}
+
+/* 비로그인 안내 */
+.navbar__guest {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* 로그아웃 버튼 */
+.navbar__btn--logout {
+  padding: 0.4rem 1rem;
+  background-color: #ef4444;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.navbar__btn--logout:hover {
+  background-color: #dc2626;
+}
+
+.navbar__btn--logout:active {
+  background-color: #b91c1c;
+  transform: scale(0.98);
+}
