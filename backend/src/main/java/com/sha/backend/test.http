@@ -1,0 +1,29 @@
+### 1. 일부러 잔고 부족 에러 유도하기 (100억 원어치 매수)
+# 현재 진짜 비트코인 가격이 대략 9천만 원대이므로, 100개를 지르면 우리 통장(1,000만 원)을 가볍게 초과합니다.
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "symbol": "KRW-BTC",
+  "type": "BUY",
+  "orderType": "MARKET",
+  "price": 95000000.0,
+  "quantity": 100.0
+}
+
+###
+
+### 2. 존재하지 않는 가짜 유저 ID로 주문 찔러보기
+# 데이터베이스에 없는 '9999'번 유저로 매수 주문을 넣어서 시스템 예외를 발생시킵니다.
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "userId": 9999,
+  "symbol": "KRW-BTC",
+  "type": "BUY",
+  "orderType": "MARKET",
+  "price": 95000000.0,
+  "quantity": 0.01
+}
